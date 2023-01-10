@@ -8,38 +8,43 @@ const Navbar = () => {
   return (
     <nav
       css={css`
-        display: flex;
-        justify-content: space-between;
-        max-width: 1200px;
-        padding: 1rem 2rem;
-        margin: 0 auto;
-        align-items: center;
         background: #f5ebdc;
       `}
     >
-      <Link
-        to="/"
+      <div
         css={css`
-          text-decoration: none;
-          color: inherit;
           display: flex;
+          justify-content: space-between;
+          max-width: 1200px;
+          padding: 1rem 2rem;
+          margin: 0 auto;
           align-items: center;
-          gap: 0.25rem;
-          svg {
-            width: 2rem;
-          }
         `}
       >
-        <MdHome /> Home
-      </Link>
-      <button
-        css={css`
-          background: var(--yellow);
-          color: #fff;
-        `}
-      >
-        Login
-      </button>
+        <Link
+          to="/"
+          css={css`
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            svg {
+              width: 2rem;
+            }
+          `}
+        >
+          <MdHome /> Home
+        </Link>
+        <button
+          css={css`
+            background: var(--yellow);
+            color: #fff;
+          `}
+        >
+          Login
+        </button>
+      </div>
     </nav>
   );
 };
